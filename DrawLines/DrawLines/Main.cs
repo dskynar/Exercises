@@ -1,5 +1,6 @@
 using System;
 using Gtk;
+using MyLibrary;
 
 namespace DrawLines
 {
@@ -17,6 +18,9 @@ namespace DrawLines
 			//Add the label to the form
 			win.Add (instruction);
 			win.ShowAll ();
+
+			MyClass test = new MyClass ();
+			Console.WriteLine ("Hello {0}", test);
 			Application.Run ();
 		}
 	}
