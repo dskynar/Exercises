@@ -5,12 +5,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawLines", "DrawLines\Draw
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyLibrary", "MyLibrary\MyLibrary.csproj", "{38531072-024C-4DA5-8E76-B1D824270F09}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyLibraryTest", "MyLibraryTest\MyLibraryTest.csproj", "{0082FD36-2AFD-4C4F-98A6-916BCD5709C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0082FD36-2AFD-4C4F-98A6-916BCD5709C6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0082FD36-2AFD-4C4F-98A6-916BCD5709C6}.Debug|x86.Build.0 = Debug|Any CPU
+		{0082FD36-2AFD-4C4F-98A6-916BCD5709C6}.Release|x86.ActiveCfg = Release|Any CPU
+		{0082FD36-2AFD-4C4F-98A6-916BCD5709C6}.Release|x86.Build.0 = Release|Any CPU
 		{38531072-024C-4DA5-8E76-B1D824270F09}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{38531072-024C-4DA5-8E76-B1D824270F09}.Debug|x86.Build.0 = Debug|Any CPU
 		{38531072-024C-4DA5-8E76-B1D824270F09}.Release|x86.ActiveCfg = Release|Any CPU
