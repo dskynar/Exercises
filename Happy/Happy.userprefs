@@ -1,9 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MyLibrary/MyClass.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Happy/MainWindow.cs">
     <Files>
-      <File FileName="DrawLines/Main.cs" Line="6" Column="2" />
-      <File FileName="MyLibrary/MyClass.cs" Line="15" Column="4" />
+      <File FileName="Happy/Main.cs" Line="1" Column="1" />
+      <File FileName="Happy/MainWindow.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

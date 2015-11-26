@@ -5,10 +5,10 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{D071B487-6C60-47CF-9CDA-205CC8CF45D8}</ProjectGuid>
+    <ProjectGuid>{F3D33964-DDCD-44B4-9A2E-68A91D9CFC5B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>DrawLines</RootNamespace>
-    <AssemblyName>DrawLines</AssemblyName>
+    <RootNamespace>Happy</RootNamespace>
+    <AssemblyName>Happy</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>true</DebugSymbols>
@@ -71,10 +71,4 @@
     <Compile Include="AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <ItemGroup>
-    <ProjectReference Include="..\MyLibrary\MyLibrary.csproj">
-      <Project>{38531072-024C-4DA5-8E76-B1D824270F09}</Project>
-      <Name>MyLibrary</Name>
-    </ProjectReference>
-  </ItemGroup>
 </Project>
