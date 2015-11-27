@@ -3,19 +3,136 @@
 
 public partial class MainWindow
 {
-	private global::Gtk.DrawingArea drawingarea1;
+	private global::Gtk.UIManager UIManager;
+	private global::Gtk.Action newAction;
+	private global::Gtk.VBox vbox6;
+	private global::Gtk.Table table4;
+	private global::Gtk.Label label10;
+	private global::Gtk.Label label11;
+	private global::Gtk.Label label9;
+	private global::Gtk.Label posX;
+	private global::Gtk.Label posY;
+	private global::Gtk.Entry presentX;
+	private global::Gtk.Entry presentY;
+	private global::Gtk.Toolbar toolbar3;
+	private global::Gtk.DrawingArea drawingarea2;
 	
 	protected virtual void Build ()
 	{
 		global::Stetic.Gui.Initialize (this);
 		// Widget MainWindow
+		this.UIManager = new global::Gtk.UIManager ();
+		global::Gtk.ActionGroup w1 = new global::Gtk.ActionGroup ("Default");
+		this.newAction = new global::Gtk.Action ("newAction", null, null, "gtk-new");
+		w1.Add (this.newAction, null);
+		this.UIManager.InsertActionGroup (w1, 0);
+		this.AddAccelGroup (this.UIManager.AccelGroup);
 		this.Name = "MainWindow";
 		this.Title = global::Mono.Unix.Catalog.GetString ("MainWindow");
 		this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 		// Container child MainWindow.Gtk.Container+ContainerChild
-		this.drawingarea1 = new global::Gtk.DrawingArea ();
-		this.drawingarea1.Name = "drawingarea1";
-		this.Add (this.drawingarea1);
+		this.vbox6 = new global::Gtk.VBox ();
+		this.vbox6.Name = "vbox6";
+		this.vbox6.Spacing = 6;
+		// Container child vbox6.Gtk.Box+BoxChild
+		this.table4 = new global::Gtk.Table (((uint)(5)), ((uint)(3)), false);
+		this.table4.Name = "table4";
+		this.table4.RowSpacing = ((uint)(6));
+		this.table4.ColumnSpacing = ((uint)(6));
+		// Container child table4.Gtk.Table+TableChild
+		this.label10 = new global::Gtk.Label ();
+		this.label10.Name = "label10";
+		this.label10.LabelProp = global::Mono.Unix.Catalog.GetString ("label10");
+		this.table4.Add (this.label10);
+		global::Gtk.Table.TableChild w2 = ((global::Gtk.Table.TableChild)(this.table4 [this.label10]));
+		w2.TopAttach = ((uint)(3));
+		w2.BottomAttach = ((uint)(4));
+		w2.XOptions = ((global::Gtk.AttachOptions)(4));
+		w2.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child table4.Gtk.Table+TableChild
+		this.label11 = new global::Gtk.Label ();
+		this.label11.Name = "label11";
+		this.label11.LabelProp = global::Mono.Unix.Catalog.GetString ("label11");
+		this.table4.Add (this.label11);
+		global::Gtk.Table.TableChild w3 = ((global::Gtk.Table.TableChild)(this.table4 [this.label11]));
+		w3.TopAttach = ((uint)(4));
+		w3.BottomAttach = ((uint)(5));
+		w3.XOptions = ((global::Gtk.AttachOptions)(4));
+		w3.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child table4.Gtk.Table+TableChild
+		this.label9 = new global::Gtk.Label ();
+		this.label9.Name = "label9";
+		this.label9.LabelProp = global::Mono.Unix.Catalog.GetString ("label9");
+		this.table4.Add (this.label9);
+		global::Gtk.Table.TableChild w4 = ((global::Gtk.Table.TableChild)(this.table4 [this.label9]));
+		w4.TopAttach = ((uint)(2));
+		w4.BottomAttach = ((uint)(3));
+		w4.XOptions = ((global::Gtk.AttachOptions)(4));
+		w4.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child table4.Gtk.Table+TableChild
+		this.posX = new global::Gtk.Label ();
+		this.posX.Name = "posX";
+		this.posX.LabelProp = global::Mono.Unix.Catalog.GetString ("Position X");
+		this.table4.Add (this.posX);
+		global::Gtk.Table.TableChild w5 = ((global::Gtk.Table.TableChild)(this.table4 [this.posX]));
+		w5.XOptions = ((global::Gtk.AttachOptions)(4));
+		w5.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child table4.Gtk.Table+TableChild
+		this.posY = new global::Gtk.Label ();
+		this.posY.Name = "posY";
+		this.posY.LabelProp = global::Mono.Unix.Catalog.GetString ("Position Y");
+		this.table4.Add (this.posY);
+		global::Gtk.Table.TableChild w6 = ((global::Gtk.Table.TableChild)(this.table4 [this.posY]));
+		w6.TopAttach = ((uint)(1));
+		w6.BottomAttach = ((uint)(2));
+		w6.XOptions = ((global::Gtk.AttachOptions)(4));
+		w6.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child table4.Gtk.Table+TableChild
+		this.presentX = new global::Gtk.Entry ();
+		this.presentX.CanFocus = true;
+		this.presentX.Name = "presentX";
+		this.presentX.IsEditable = true;
+		this.presentX.InvisibleChar = '•';
+		this.table4.Add (this.presentX);
+		global::Gtk.Table.TableChild w7 = ((global::Gtk.Table.TableChild)(this.table4 [this.presentX]));
+		w7.LeftAttach = ((uint)(1));
+		w7.RightAttach = ((uint)(2));
+		w7.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child table4.Gtk.Table+TableChild
+		this.presentY = new global::Gtk.Entry ();
+		this.presentY.CanFocus = true;
+		this.presentY.Name = "presentY";
+		this.presentY.IsEditable = true;
+		this.presentY.InvisibleChar = '•';
+		this.table4.Add (this.presentY);
+		global::Gtk.Table.TableChild w8 = ((global::Gtk.Table.TableChild)(this.table4 [this.presentY]));
+		w8.TopAttach = ((uint)(1));
+		w8.BottomAttach = ((uint)(2));
+		w8.LeftAttach = ((uint)(1));
+		w8.RightAttach = ((uint)(2));
+		w8.YOptions = ((global::Gtk.AttachOptions)(4));
+		this.vbox6.Add (this.table4);
+		global::Gtk.Box.BoxChild w9 = ((global::Gtk.Box.BoxChild)(this.vbox6 [this.table4]));
+		w9.Position = 0;
+		w9.Expand = false;
+		w9.Fill = false;
+		// Container child vbox6.Gtk.Box+BoxChild
+		this.UIManager.AddUiFromString ("<ui><toolbar name='toolbar3'><toolitem name='newAction' action='newAction'/></toolbar></ui>");
+		this.toolbar3 = ((global::Gtk.Toolbar)(this.UIManager.GetWidget ("/toolbar3")));
+		this.toolbar3.Name = "toolbar3";
+		this.toolbar3.ShowArrow = false;
+		this.vbox6.Add (this.toolbar3);
+		global::Gtk.Box.BoxChild w10 = ((global::Gtk.Box.BoxChild)(this.vbox6 [this.toolbar3]));
+		w10.Position = 1;
+		w10.Expand = false;
+		w10.Fill = false;
+		// Container child vbox6.Gtk.Box+BoxChild
+		this.drawingarea2 = new global::Gtk.DrawingArea ();
+		this.drawingarea2.Name = "drawingarea2";
+		this.vbox6.Add (this.drawingarea2);
+		global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.vbox6 [this.drawingarea2]));
+		w11.Position = 2;
+		this.Add (this.vbox6);
 		if ((this.Child != null)) {
 			this.Child.ShowAll ();
 		}
@@ -23,5 +140,6 @@ public partial class MainWindow
 		this.DefaultHeight = 300;
 		this.Show ();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler (this.OnDeleteEvent);
+		this.drawingarea2.ButtonPressEvent += new global::Gtk.ButtonPressEventHandler (this.OnDrawingarea2ButtonPressEvent);
 	}
 }
