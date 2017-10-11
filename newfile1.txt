@@ -12,3 +12,4 @@ and here are some more conflicting stuff
 this is what I mean
 Oh so nice to have a remote branch
 
+and now I create a new branch verynice3
