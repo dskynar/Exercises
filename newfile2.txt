@@ -1,1 +1,2 @@
 And now we test rebase
+let's see what happens with the tree now
